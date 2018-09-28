@@ -1,9 +1,12 @@
 <li>
 	{{name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
+	<button class="btn btn-primary change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
 		{{#if devour}}EAT NOW!{{else}}MAKE ME!{{/if}}
+		<span class="glyphicon glyphicon-menu-hamburger"></span>
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">THAT WAS A MISTAKE!</button>
+	<button class="btn btn-primary delete-burger" data-id="{{this.id}}">THAT WAS A MISTAKE!
+		<span class="glyphicon glyphicon-menu-hamburger"></span>
+	</button>
 </li>
